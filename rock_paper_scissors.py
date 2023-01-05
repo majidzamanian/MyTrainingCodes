@@ -12,6 +12,10 @@ elif choose == ("paper") and y == ("scissors"):
     print(f"you with {choose} lost agenst computyer {y}" )
 elif choose == ("rock") and y == ("scissors"):
     print(f"you with {choose} won agenst computyer {y}" )
+elif choose == ("rock") and y == ("paper"):
+    print(f"you with {choose} won agenst computyer {y}" )
+elif choose != box:
+    print(f"wrong vocabulary " )
 
 
 
