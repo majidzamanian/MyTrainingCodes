@@ -12,18 +12,23 @@ count = len(word)
 #making a list for gussing by user by using the word choosed from list
 list_of_the_word = ["-"] *  count
 
-
-for i in range (2,-1,-1):
+# the amount of man life
+i=3
+while count!=0:
     # input a character by user
     choice = input("what is your character?")
     if not choice.isalpha() or len(choice) > 1 or word.find(choice) <0:
-        # the amount of man life
+        #lifes
         print(f"you have only {i} life left")
+        i-=1
+        if i ==0:
+            print("game is over")
+            break
 
     #if there was no problem
     else:
         list_of_the_word[word.find(choice)] = choice
-        choice = input("and ?")
+        count -=1
         print(list_of_the_word)
 
 
