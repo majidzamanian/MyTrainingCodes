@@ -1,8 +1,12 @@
 import random
 
+#list of weapons
 box = ["rock", "paper", "scissors"]
+
+#computer choice of the box of weapons
 y = random.choice(box)
 
+#scores
 curent_lvl = 2
 Final_lvl = 4
 your_score= 0
@@ -10,7 +14,7 @@ computer_score = 0
 
 
 
-
+#loop for the game until 3 rounds will finished
 while curent_lvl <= Final_lvl:
 
     choose = str(input("what is your weapon? Rock, paper or scissors? "))
@@ -36,6 +40,7 @@ while curent_lvl <= Final_lvl:
         print(f"wrong vocabulary " )
 
 
+#printing final scores
 if your_score > computer_score:
     print(f"congrate you won against computer with you {your_score} and computer {computer_score}")
 elif your_score < computer_score:
@@ -43,6 +48,7 @@ elif your_score < computer_score:
 elif your_score == computer_score:
     print(f"that was a tie with you {your_score} and computer {computer_score}. such a chance :) ")
 
+#the end
 print('Level Ends')
 
 

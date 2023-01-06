@@ -1,6 +1,9 @@
 import random
 import math
 
+#this game is about finding the number you did choose by cumputer
+
+#your lower and higher number to make a list of numbers and then picking from one of them
 lower = int(input("lower round? "))
 higher = int(input("higher round? "))
 count = 0
