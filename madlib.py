@@ -13,3 +13,23 @@ if answer == "yes":
     print("story number two: " + story_2)
 elif answer == "no":
     print("ok")
+
+
+
+"""
+the new way whit main:
+def madlib(x,y):
+    p= f"your name is {x} {y}  so...when we goets here you can \
+    go fuck your self"
+    print(p)
+
+
+
+if __name__ == "__main__":
+    x= input("what the fuck is your name: " )
+    y=input("what the fuck is your last name: " ) 
+    madlib(x,y);
+
+
+
+"""
